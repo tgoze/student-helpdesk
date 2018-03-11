@@ -1,0 +1,38 @@
+﻿@import url('https://fonts.googleapis.com/css?family=Share+Tech');
+
+header, main, footer {
+    padding-left: 300px;
+}
+
+body {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+	background-color: #f5f5f5;
+	overflow: scroll;
+	overflow-x: hidden; 
+}
+
+.logo-container {
+    display: block;
+    padding: 10px;
+    text-align: center;
+}
+
+.brand-logo {
+    font-family: 'Share Tech', sans-serif;
+    font-size-adjust: .75;    
+}
+
+.sidenav {
+	background-color: #00acc1;       
+}
+
+li > span {
+    padding-left: 12px;
+}
+
+.collapsible-body > ul {
+    /*background-color: #00acc1;*/
+    background-color: #0097a7;
+}

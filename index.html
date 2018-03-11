@@ -1,0 +1,189 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<!-- jQuery -->
+		<script src="js/jquery-3.2.1.js"></script>
+
+        <!-- Transit animations from ricostacruz.com  -->
+        <script src="js/jquery.transit.min.js"></script>
+
+        <!-- Materialize JavaScript -->
+        <script src="js/materialize.min.js"></script>
+
+		<!-- Materialize CSS -->
+		<link rel="stylesheet" href="css/materialize.min.css">
+
+        <!-- Materialize icons -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+        <!-- Custom CSS file -->
+        <link href="css/home_style.css" type="text/css" rel="stylesheet">				        				
+
+		<meta charset="utf-8">
+		<title>Student Helpdesk</title>
+	</head>    
+
+	<body> 		
+        <div id="login-modal" class="modal modal-fixed-footer">
+            <div class="modal-content">
+                <h4>Register</h4>
+                <div class="row">
+                    <div class="input-field col s6">
+                        <input id="first_name" type="text" class="validate">
+                        <label for="first_name">First Name</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <input id="last_name" type="text" class="validate">
+                        <label for="last_name">Last Name</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="email" type="email" class="validate">
+                        <label for="email">Email</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="password" type="password" class="validate">
+                        <label for="password">Password</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="password" type="password" class="validate">
+                        <label for="password">Validate Password</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix">phone</i>
+                        <input id="icon_telephone" type="tel" class="validate">
+                        <label for="icon_telephone">Telephone (Optional)</label>
+                    </div>
+                </div>                
+            </div>
+            <div class="modal-footer">
+                <a href="#!" class="modal-action modal-close waves-effect waves-orange btn-flat">Already have an account?</a>
+                <a href="#!" class="modal-action modal-close waves-effect waves-orange btn-flat">Register</a>
+            </div>
+        </div>
+
+		<header>
+            <div class="navbar-fixed">
+                <nav>
+                    <div class="nav-wrapper">
+                        <a href="index.html" class="brand-logo">The Student's Helpdesk</a>
+                        <ul id="nav-mobile" class="right hide-on-med-and-down">
+                            <li><a href="work_requests.html">Request Help</a></li>
+                            <li><a href="technicians.html">Meet Our Tech Guys</a></li>
+                            <li><a href="#login-modal" class="modal-trigger">Login / Register</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <div class="container">
+                <div id="banner" class="section row banner">
+                    <img class="responsive-img" src="pics/laptop.png" />
+                    <p id="load-animation"></p>                   
+                    <a class="opening-msg waves-effect btn-large orange" href="work_requests.html">Request Help</a>
+                </div>
+            </div>							            
+			<script src="js/opening-animation.js"></script>
+		</header>                                
+
+		<main>
+			<div class="container">
+                <div class="divider"></div>
+				<div class="devices row section">
+					<div class="col s4">
+						<div class="card small device hoverable">
+							<div class="card-content center activator">
+								<i class="material-icons large">laptop_windows</i>
+								<span class="card-title">Laptops</span>	
+                                <i class="material-icons large">keyboard_arrow_up</i>							
+							</div>
+                            <div class="card-reveal">
+                                <span class="card-title">Laptops<i class="material-icons right">close</i></span>
+                                <p>
+                                    Drop your laptop? Get the blue screen of death? No worries: we've got you covered.
+                                    We can fix anything from cracked screens to dead batteries, or slow surfers to
+                                    malicious viruses.
+                                </p>
+                            </div>
+						</div>
+					</div>
+					<div class="col s4">
+						<div class="card small device hoverable">
+							<div class="card-content center activator">
+								<i class="material-icons large">desktop_windows</i>
+								<span class="card-title">Desktops</span>
+                                <i class="material-icons large">keyboard_arrow_up</i>								
+							</div>
+                            <div class="card-reveal">
+                                <span class="card-title">Desktops<i class="material-icons right">close</i></span>								
+                                <p>
+                                    Your gaming desktop crash? Many of our technicians have built their own computers,
+                                    so you are in capable hands. We can resolve most any hardware or software problem
+                                    you encounter.
+                                </p>
+                            </div>
+						</div>
+					</div>
+					<div class="col s4">
+						<div class="card small device hoverable">
+							<div class="card-content center activator">
+								<i class="material-icons large">phone_iphone</i>
+								<span class="card-title">Phones & Tablets</span>
+                                <i class="material-icons large">keyboard_arrow_up</i>								
+							</div>
+                            <div class="card-reveal">
+                                <span class="card-title">Phones & Tablets<i class="material-icons right">close</i></span>
+                                <p>
+                                    Broke your phone and not wanting to buy a new one? Whether it's an iPhone, Android,
+                                    or Windows phone or tablet, we have the knowledge and tools to get it working again.
+                                </p>
+                            </div>
+						</div>
+					</div>
+				</div>
+			</div>
+            <div class="container">
+                <div class="divider"></div>
+                <div class="row section">
+                    <div class="card horizontal small" id="profile-pics">                        
+                        <div class="col s6 valign-wrapper">
+                            <div class="profile-pic z-depth-2 tooltipped" data-position="bottom" data-tooltip="TJ Gozé" style="background-image: url('pics/profile pic.jpg')"></div>
+                            <div class="profile-pic z-depth-2 tooltipped" data-position="bottom" data-tooltip="Andy Markovic" style="background-image: url('pics/andys face.jpg')"></div>
+                            <div class="profile-pic z-depth-2 tooltipped" data-position="bottom" data-tooltip="Andrew Ottaviano" style="background-image: url('pics/andrews face.jpg')"></div>
+                            <div class="profile-pic z-depth-2 tooltipped" data-position="bottom" data-tooltip="Dakota Dalton" style="background-image: url('pics/dakotas face.jpg')"></div>   
+                            <!--<img src="pics/andrews face.jpg" class="circle responsive-img"/>-->
+                        </div>
+                        <div class="col s5 card-content technician-text">
+                            <span class="card-title">Meet The Nerds</span>
+                            <p>We have qualified computer specialists here to help you with all of your technical needs.</p>
+                            <a class="waves-effect btn-large orange">Meet Our Tech Guys</a>
+                        </div>
+                        <script src="js/profile-hover.js"></script>                                             
+                    </div>
+                </div>
+            </div>
+		</main>
+
+		<footer class="page-footer">
+			<div class="container">
+				<div class="row">					
+					<h5>Contact the Nerds</h5>
+					<p class="grey-text text-lighten-3">
+						Don't call us while we are sleeping. 555-5555
+					</p>					
+				</div>						    
+            </div>
+            <div class="footer-copyright">
+                <div class="container">
+                    <p>© 2017 The Student's Helpdesk</p>
+                </div>
+            </div>
+		</footer>
+	</body>
+</html>

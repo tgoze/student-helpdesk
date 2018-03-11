@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css?family=Share+Tech');
+
+body {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+	background-color: #f5f5f5;
+	overflow: scroll;
+	overflow-x: hidden; 
+}
+
+/*main {
+	flex: 1 0 auto;
+}*/
+
+.brand-logo {
+    font-family: 'Share Tech', sans-serif;
+    margin-left: 10px;
+}
+
+nav {
+	background-color: #00acc1;
+}
+
+.banner {
+	height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#load-animation {    
+	opacity: 0;
+}
+
+.opening-msg {    
+    opacity: 0;
+    margin: auto;
+}
+
+.device i {
+	color: #616161;
+}
+
+.profile-pic {
+    position: relative; 
+    float: left;
+    margin-right: -12%;   
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+    border-radius: 150px;
+    border: 3px solid;
+    border-color: #ffffff; 
+}
+
+.technician-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+.page-footer {
+    font-family: 'Share Tech', sans-serif;
+	background-color: #00acc1;
+}        
